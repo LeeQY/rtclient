@@ -1,0 +1,4 @@
+package: github.com/drkaka/rtclient
+import:
+- package: github.com/urfave/cli
+  version: ^1.19.1

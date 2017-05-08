@@ -1,0 +1,21 @@
+{
+    "version": "0.1.0",
+    "command": "go",
+    "isShellCommand": true,
+    "showOutput": "always",
+    "options": {
+        "cwd": "${fileDirname}"
+    },
+    "tasks": [
+        {
+            "taskName": "build",
+            "args": ["-o", "rtclient.exe", "main.go"],
+            "isBuildCommand": true
+        },
+        {
+            "taskName": "test",
+            "args": ["-v", "-cover", "-race", "-timeout", "10s"],
+            "isTestCommand": true
+        }
+    ]
+}
